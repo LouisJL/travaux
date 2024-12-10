@@ -1,0 +1,171 @@
+html body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Tahoma, sans-serif;
+}
+
+#backgroundAccueil {
+    min-width: 40ch;
+    background-image: url(../images/Accueil.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: relative;
+}
+
+#titreHeader {
+    background-image: url(/travaux/pfi/images/Bannière.avif);
+    height: 4ch;
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    padding-top: 2ch;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+}
+
+.row {
+    margin-right: 5ch;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.bgcolor {
+    background-color: darkcyan;
+}
+
+#photo {
+    content: url(/travaux/pfi/images/Louis.jpg);
+    height: 500px;
+    width: auto;
+    object-fit: contain;
+    margin: auto;
+    border-radius: 150px;
+}
+
+.nom {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 0.5ch;
+}
+
+#info {
+    margin: 1ch;
+    padding: 3ch;
+    background-color: white;
+    border-radius: 20px;
+    border: solid black 2px;
+    height: 50ch;
+}
+
+#connaissances {
+    margin: 1ch;
+    padding: 3ch;
+    background-color: white;
+    border-radius: 20px;
+    border: solid black 2px;
+    height: 50ch;
+}
+
+#réalisations {
+    margin: 1ch;
+    padding: 3ch;
+    background-color: white;
+    border-radius: 20px;
+    border: solid black 2px;
+    height: 50ch;
+}
+
+li {
+    padding: 3px;
+}
+
+div > div {
+    padding: 3px;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: black;
+    color: white;
+    font-size: 1.5em;
+    padding: 15px;
+}
+
+.boutonNav {
+    text-decoration: none;
+    color: white;
+}
+
+.boutonNav:hover {
+    color: yellow;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: gray;
+    padding: 15px;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+.textePadding {
+    padding-top: 2ch;
+}
+
+.réalisationsPadding {
+    padding-top: 2ch;
+}
+
+@media screen and (max-width: 75ch) {
+    nav {
+        grid-template-columns: 1fr 1fr;
+        min-width: 25ch;
+    }
+}
+
+@media screen and (max-width: 45ch) {
+    nav {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 120ch) {
+    .row {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #connaissances {
+        height: 50ch;
+    }
+
+    #réalisations {
+        height: 50ch;
+    }
+
+    #info {
+        height: 50ch;
+    }
+}
+
+@media screen and (max-width: 90ch) {
+    .row {
+        grid-template-columns: 1fr;
+        margin-right: 0ch;
+    }
+
+    #connaissances {
+        height: 50ch;
+    }
+}

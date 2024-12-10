@@ -1,0 +1,116 @@
+html body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Tahoma, sans-serif;
+}
+
+#titreHeader {
+    background-image: url(/travaux/pfi/images/Bannière.avif);
+    height: 4ch;
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    padding-top: 2ch;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: black;
+    color: white;
+    font-size: 1.5em;
+    padding: 15px;
+}
+
+.boutonNav {
+    text-decoration: none;
+    color: white;
+}
+
+.boutonNav:hover {
+    color: yellow;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: gray;
+    padding: 15px;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+.titre {
+    text-decoration: underline;
+    padding: 5px;
+}
+
+.emploiEtDescription {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    padding: 25px;
+    border: solid black 3px;
+}
+
+.rowImpaire div:nth-child(odd) {
+    background-color: lightgray;
+}
+
+#divfooter {
+    background-color: gray;
+}
+
+.centre {
+    margin: auto;
+    font-weight: bold;
+}
+
+#source {
+    background-color: white;
+}
+
+.infoSource {
+    display: flex;
+    text-align: center;
+    justify-content: start;
+    padding-top: 5px;
+}
+
+@media screen and (max-width: 120ch) {
+    .emploiEtDescription {
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
+@media screen and (max-width: 70ch) {
+    .emploiEtDescription {
+        grid-template-columns: 1fr 3fr;
+    }
+}
+
+@media screen and (max-width: 65ch) {
+    .emploiEtDescription {
+        grid-template-columns: 1.7fr;
+    }
+}
+
+@media screen and (max-width: 65ch) {
+    .emploiEtDescription {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 75ch) {
+    nav {
+        grid-template-columns: 1fr 1fr;
+        min-width: 25ch;
+    }
+}
+
+@media screen and (max-width: 45ch) {
+    nav {
+        grid-template-columns: 1fr 1fr;
+    }
+}

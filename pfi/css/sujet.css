@@ -1,0 +1,311 @@
+html body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Tahoma, sans-serif;
+}
+
+#titreHeader {
+    background-image: url(/travaux/pfi/images/Bannière.avif);
+    height: 4ch;
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    padding-top: 2ch;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: black;
+    color: white;
+    font-size: 1.5em;
+    padding: 15px;
+}
+
+.boutonNav {
+    text-decoration: none;
+    color: white;
+}
+
+.boutonNav:hover {
+    color: yellow;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: gray;
+    padding: 15px;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+body {
+    background-color: lightblue;
+}
+
+#titre {
+    text-align: center;
+    margin-bottom: 5ch;
+    margin-top: 3ch;
+}
+
+ul > li {
+    padding-bottom: 2ch;
+}
+
+#section1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 20ch;
+    margin-left: 5ch;
+}
+
+#photo1 {
+    justify-content: center;
+    align-items: center;
+    content: url(/travaux/pfi/images/consoles.webp);
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    border: solid black 1px;
+}
+
+#texteImage1 {
+    margin-top: 0.5ch;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 1ch;
+}
+
+#section2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 20ch;
+    margin-right: 5ch;
+}
+
+#texteImage2 {
+    margin-top: 0.5ch;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 1ch;
+}
+
+#photo2 {
+    content: url(/travaux/pfi/images/MagnavoxOdyssey.png);
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
+    border: solid black 1px;
+}
+
+#section3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 5ch;
+    height: 30ch;
+    margin-bottom: 20ch;
+}
+
+#photo3 {
+    content: url(/travaux/pfi/images/Gen5.jpg);
+    width: 100%;
+    height: 100%;
+    border: ridge black 2px;
+    border-radius: 10px;
+}
+
+#texteImage3 {
+    margin-top: 0.5ch;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 1ch;
+}
+
+#section4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 20ch;
+    padding-right: 5ch;
+}
+
+#photo4 {
+    content: url(/travaux/pfi/images/Gen6.jpg);
+    width: 100%;
+    height: 100%;
+    border: ridge black 2px;
+    border-radius: 10px;
+}
+
+#texteImage4 {
+    margin-top: 0.5ch;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 1ch;
+}
+
+#section5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 20ch;
+    padding-left: 5ch;
+}
+
+#section6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 20ch;
+    padding-right: 5ch;
+}
+
+#photo5 {
+    content: url(/travaux/pfi/images/Gen7.jpg);
+    width: 100%;
+    height: 100%;
+    border: ridge black 2px;
+    border-radius: 10px;
+}
+
+#texteImage5 {
+    margin-top: 0.5ch;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 1ch;
+}
+
+#section7 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 20ch;
+    padding-left: 5ch;
+}
+
+#photo6 {
+    content: url(/travaux/pfi/images/Gen8.jpg);
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    border: solid black 1px;
+}
+
+#texteImage6 {
+    margin-top: 0.5ch;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 1ch;
+}
+
+#photo7 {
+    content: url(/travaux/pfi/images/Gen9.jpg);
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    border: solid black 1px;
+}
+
+#texteImage7 {
+    margin-top: 0.5ch;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 1ch;
+}
+
+@media screen and (max-width: 75ch) {
+    nav {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #section1 {
+        grid-template-columns: 1fr;
+        padding-right: 5ch;
+    }
+
+    #section2 {
+        grid-template-columns: 1fr;
+        padding-left: 5ch;
+    }
+
+    #section3 {
+        grid-template-columns: 1fr;
+        padding-right: 5ch;
+    }
+
+    #section4 {
+        grid-template-columns: 1fr;
+        padding-left: 5ch;
+    }
+
+    #section5 {
+        grid-template-columns: 1fr;
+        padding-left: 5ch;
+        padding-right: 5ch;
+    }
+
+    #section6 {
+        grid-template-columns: 1fr;
+        padding-left: 5ch;
+    }
+
+    #section7 {
+        grid-template-columns: 1fr;
+        padding-right: 5ch;
+    }
+}
+
+@media screen and (max-width: 45ch) {
+    nav {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #section1 {
+        grid-template-columns: 1fr;
+        padding-right: 5ch;
+    }
+
+    #section2 {
+        grid-template-columns: 1fr;
+        padding-left: 5ch;
+    }
+
+    #section3 {
+        grid-template-columns: 1fr;
+        padding-right: 5ch;
+    }
+
+    #section4 {
+        grid-template-columns: 1fr;
+        padding-left: 5ch;
+    }
+
+    #section5 {
+        grid-template-columns: 1fr;
+        padding-left: 5ch;
+        padding-right: 5ch;
+    }
+
+    #section6 {
+        grid-template-columns: 1fr;
+        padding-left: 5ch;
+    }
+
+    #section7 {
+        grid-template-columns: 1fr;
+    }
+}

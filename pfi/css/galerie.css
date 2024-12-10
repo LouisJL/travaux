@@ -1,0 +1,122 @@
+html body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Tahoma, sans-serif;
+}
+
+#titreHeader {
+    background-image: url(/travaux/pfi/images/Bannière.avif);
+    height: 4ch;
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    padding-top: 2ch;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: black;
+    color: white;
+    font-size: 1.5em;
+    padding: 15px;
+}
+
+.boutonNav {
+    text-decoration: none;
+    color: white;
+}
+
+.boutonNav:hover {
+    color: yellow;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: gray;
+    padding: 15px;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+}
+
+#contenuGalerie {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 2ch;
+}
+
+.galleryHeader {
+    font-size: 2em;
+    padding-top: 2ch;
+    margin-bottom: 1ch;
+    font-weight: bold;
+    text-align: center;
+}
+
+.gallery {
+    margin: 4ch;
+    float: left;
+    max-width: 280px;
+    max-height: 200px;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.divBorderRond {
+    border-radius: 50px;
+}
+
+body {
+    background-color: lightblue;
+}
+
+.dimensionImage {
+    height: 202px !important; /* Important utilisé ici pour uniformiser la hauteur des images! */
+}
+
+#league {
+    padding-top: 5ch;
+}
+
+@media screen and (max-width: 125ch) {
+    #contenuGalerie {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 70ch) {
+    #contenuGalerie {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 50ch) {
+    #contenuGalerie {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 75ch) {
+    nav {
+        grid-template-columns: 1fr 1fr;
+        min-width: 25ch;
+    }
+}
+
+@media screen and (max-width: 45ch) {
+    nav {
+        grid-template-columns: 1fr 1fr;
+    }
+}

@@ -1,0 +1,266 @@
+p {
+    padding: 0px;
+    margin: 0px;
+}
+
+html body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: lightcyan;
+    font-family: Arial, Tahoma, sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+}
+
+#titreHeader {
+    background-image: url(/travaux/pfi/images/Bannière.avif);
+    height: 4ch;
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    padding-top: 2ch;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: black;
+    color: white;
+    font-size: 1.5em;
+    padding: 15px;
+}
+
+.boutonNav {
+    text-decoration: none;
+    color: white;
+}
+
+.boutonNav:hover {
+    color: yellow;
+}
+
+#contenantHoraire {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 0.6fr 3fr 3fr 3fr 3fr 3fr;
+    margin-bottom: 10px;
+    margin: 1ch;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: gray;
+    padding: 15px;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+.carréBlanc {
+    color: white;
+    padding: 5px;
+}
+
+#heureMardi {
+    display: none;
+}
+
+#heureMercredi {
+    display: none;
+}
+
+#heureJeudi {
+    display: none;
+}
+
+#heureVendredi {
+    display: none;
+}
+
+.colonneFlex {
+    display: flex;
+    flex-direction: column;
+    min-width: 32ch;
+}
+
+.colonneFlex > div {
+    padding: 2px;
+    height: 10ch;
+}
+
+.border {
+    border: solid black 1px;
+}
+
+.colonne1 {
+    padding: 2px;
+    display: flex;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    height: 10ch;
+}
+
+.nomEnGras {
+    font-weight: bold;
+}
+
+.codeCourItalique {
+    font-style: italic;
+}
+
+.courDeMath {
+    background-color: aquamarine;
+}
+
+.courDeProg {
+    background-color: lightgreen;
+}
+
+.courDeWeb {
+    background-color: lightpink;
+}
+
+.courDeStation {
+    background-color: lightslategray;
+}
+
+#Section2cours {
+    background-color: lightcyan;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.SousSection2 {
+    padding: 20px;
+    background-color: white;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    border: solid black 2px;
+}
+
+.ConteneurDeText {
+    min-width: 32ch;
+    margin-right: 35ch;
+}
+
+.Description {
+    text-decoration: underline;
+    font-weight: bold;
+    padding-bottom: 2px;
+}
+
+.Appréciation {
+    text-decoration: underline;
+    font-weight: bold;
+    padding-top: 5px;
+    color: green;
+}
+
+.MoinsApprécié {
+    text-decoration: underline;
+    font-weight: bold;
+    padding-top: 5px;
+    color: red;
+}
+
+#image1 {
+    margin-top: 3ch;
+    display: flex;
+    width: 25ch;
+    height: 25ch;
+    justify-self: center;
+    align-items: center;
+}
+
+#image2 {
+    margin-top: 3ch;
+    border-radius: 10px;
+    display: flex;
+    width: 25ch;
+    height: 25ch;
+    justify-self: center;
+    align-items: center;
+}
+
+.backgroundCasePrincipales {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+@media screen and (max-width: 127ch) {
+    #contenantHoraire {
+        grid-template-columns: 0.6fr 3fr 3fr 3fr;
+    }
+
+    #heureJeudi {
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 75ch) {
+    #contenantHoraire {
+        grid-template-columns: 0.6fr 3fr;
+    }
+
+    #heureMardi {
+        display: inline;
+    }
+
+    #heureMercredi {
+        display: inline;
+    }
+
+    #heureVendredi {
+        display: inline;
+    }
+
+    #Section2cours {
+        min-width: 32ch;
+    }
+
+    .SousSection2 {
+        flex-direction: column;
+    }
+
+    #image1 {
+        justify-self: center;
+        padding-left: 0;
+    }
+
+    #image2 {
+        justify-self: center;
+    }
+}
+
+@media screen and (max-width: 75ch) {
+    nav {
+        grid-template-columns: 1fr 1fr;
+        min-width: 25ch;
+    }
+
+    .ConteneurDeText {
+        min-width: 0;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 45ch) {
+    nav {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .ConteneurDeText {
+        min-width: 0;
+        margin-right: 0;
+    }
+}

@@ -1,0 +1,195 @@
+html body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: lightblue;
+    font-family: Arial, Tahoma, sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+}
+
+#titreHeader {
+    background-image: url(/travaux/pfi/images/Bannière.avif);
+    height: 4ch;
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    padding-top: 2ch;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: black;
+    color: white;
+    font-size: 1.5em;
+    padding: 15px;
+}
+
+#contenueKB2Plus {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 35ch;
+}
+
+.boutonNav {
+    text-decoration: none;
+    color: white;
+}
+
+.boutonNav:hover {
+    color: yellow;
+}
+
+.bouton {
+    margin-left: 2ch;
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 1.5em;
+    border: solid darkblue 5px;
+}
+
+.menudéroulant-éléments {
+    display: none;
+    position: absolute;
+    background-color: white;
+}
+
+.menudéroulant-éléments a:nth-child(even) {
+    background-color: lightgray;
+}
+
+.menudéroulant-éléments a {
+    color: black;
+    padding: 2ch;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+}
+
+.bouton:hover {
+    color: yellow;
+}
+
+.menudéroulant-éléments a:hover {
+    background-color: black;
+    color: white;
+}
+
+.menudéroulant:hover .menudéroulant-éléments {
+    display: inline-block;
+}
+
+.menudéroulant:hover .bouton {
+    background-color: darkblue;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: gray;
+    padding: 15px;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+#formulaire {
+    display: grid;
+    border: solid black 2px;
+    padding-bottom: 1ch;
+    padding-left: 10ch;
+}
+
+#conteneurFlex1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 3ch;
+    padding-left: 3ch;
+}
+
+#conteneurFlex2 {
+    display: flex;
+    flex-direction: row;
+    padding-left: 3ch;
+}
+
+#conteneurFlex3 {
+    display: flex;
+    flex-direction: row;
+    padding-left: 3ch;
+    padding-right: 1ch;
+}
+
+#conteneurFlex4 {
+    display: flex;
+    flex-direction: row;
+    padding-left: 3ch;
+    padding-right: 1ch;
+}
+
+#conteneurFlex5 {
+    display: flex;
+    flex-direction: row;
+    padding-left: 3ch;
+}
+
+#conteneurFlex3 > div > input {
+    width: 12ch;
+    margin-right: 2ch;
+}
+
+#sectionAudio {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    font-weight: bold;
+}
+
+.titre {
+    text-align: center;
+}
+
+@media screen and (max-width: 75ch) {
+    nav {
+        grid-template-columns: 1fr 1fr;
+        min-width: 25ch;
+    }
+}
+
+@media screen and (max-width: 45ch) {
+    nav {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 120ch) {
+    #contenueKB2Plus {
+        grid-template-columns: 1fr 1fr;
+        gap: 10ch;
+    }
+
+    #formulaire {
+        grid-template-columns: 1fr;
+        margin: 1ch;
+    }
+}
+
+@media screen and (max-width: 90ch) {
+    #contenueKB2Plus {
+        grid-template-columns: 1fr;
+        gap: 5ch;
+    }
+
+    #sectionAudio {
+        padding-bottom: 4ch;
+    }
+}
