@@ -19,7 +19,7 @@ html body {
 }
 
 #titreHeader {
-    background-image: url(/travaux/pfi/images/Bannière.avif);
+    background-image: url(../pfi/images/Bannière.avif);
     height: 4ch;
     font-size: 1.5em;
     color: white;
